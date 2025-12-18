@@ -256,18 +256,12 @@
 
 <section id="contact">
     <h2>Kontaktieren Sie uns</h2>
-    <div class="card">
-        <p>Sie möchten mehr über unsere Offline-KI erfahren oder ein Angebot erhalten?</p>
-        <p>Email: info@it-ohne-cloud</p>
-    </div>
-    <div class="card">
-        <form>
-            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-            <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required>
-            <textarea id="message" name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
-            <button type="submit">Absenden</button>
-        </form>
-    </div>
+    <form action="mailto:info@it-ohne-cloud.de" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Ihr Name" required>
+    <input type="email" name="email" placeholder="Ihre E-Mail" required>
+    <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+    <button type="submit">Absenden</button>
+</form>
 </section>
 
 <footer>
