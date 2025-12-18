@@ -1,10 +1,251 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <title>My First Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offline KI für Kanzleien & Praxen</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        line-height: 1.6;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    header {
+        background: url('hero-placeholder.jpg') center/cover no-repeat;
+        color: white;
+        text-align: center;
+        padding: 6rem 1rem 4rem 1rem;
+        position: relative;
+    }
+    header::after {
+        content: '';
+        position: absolute;
+        top:0; left:0;
+        width:100%; height:100%;
+        background: rgba(0,0,0,0.5);
+        z-index:1;
+    }
+    header .content {
+        position: relative;
+        z-index:2;
+    }
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    header p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    header button {
+        background-color: #ff9800;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    header button:hover {
+        background-color: #e68900;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #004080;
+    }
+    nav a {
+        color: white;
+        padding: 1rem 2rem;
+        font-weight: bold;
+    }
+    nav a:hover {
+        background-color: #0066cc;
+    }
+    section {
+        padding: 4rem 1rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+    section h2 {
+        color: #004080;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .services, .advantages, .workflow, .references {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .card {
+        flex: 1 1 300px;
+        border: 1px solid #ddd;
+        padding: 2rem;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    .card img {
+        width: 80px;
+        margin-bottom: 1rem;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    ul li {
+        margin: 0.8rem 0;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+    ul li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #ff9800;
+    }
+    form input, form textarea {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    form button {
+        background-color: #004080;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    form button:hover {
+        background-color: #0066cc;
+    }
+    footer {
+        background-color: #004080;
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+    }
+    @media(max-width: 768px) {
+        header h1 {
+            font-size: 2rem;
+        }
+        header p {
+            font-size: 1rem;
+        }
+    }
+</style>
 </head>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>This site is powered by GitHub Pages.</p>
+
+<header>
+    <div class="content">
+        <h1>Offline KI für Kanzleien & Praxen</h1>
+        <p>Sicher, schnell und datenschutzkonform – Ihre individuelle KI-Lösung direkt vor Ort</p>
+        <button>Jetzt anfragen</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#services">Leistungen</a>
+    <a href="#advantages">Vorteile</a>
+    <a href="#workflow">Ablauf</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<section id="services">
+    <h2>Unsere Leistungen</h2>
+    <div class="services">
+        <div class="card">
+            <img src="icon-setup.png" alt="Einrichtung">
+            <h3>Individuelle Einrichtung</h3>
+            <p>Wir installieren und konfigurieren Ihre offline KI maßgeschneidert für Ihre Kanzlei oder Praxis.</p>
+        </div>
+        <div class="card">
+            <img src="icon-security.png" alt="Datenschutz">
+            <h3>Datenschutz & Sicherheit</h3>
+            <p>Alle Daten bleiben lokal. Keine Cloud, keine unkontrollierte Datenweitergabe.</p>
+        </div>
+        <div class="card">
+            <img src="icon-training.png" alt="Schulung">
+            <h3>Schulung & Support</h3>
+            <p>Wir schulen Ihr Team im Umgang mit der KI und stehen jederzeit beratend zur Seite.</p>
+        </div>
+        <div class="card">
+            <img src="icon-custom.png" alt="Individuell">
+            <h3>Individuelle Anpassungen</h3>
+            <p>Wir passen die KI an Ihre spezifischen Anforderungen und Arbeitsprozesse an.</p>
+        </div>
+    </div>
+</section>
+
+<section id="advantages">
+    <h2>Vorteile einer Offline KI</h2>
+    <div class="advantages">
+        <ul>
+            <li>Maximale Datensicherheit – alles bleibt vor Ort</li>
+            <li>Schnelle Reaktionszeiten ohne Internetabhängigkeit</li>
+            <li>Individuell auf Ihre Bedürfnisse angepasst</li>
+            <li>Keine monatlichen Cloud-Gebühren</li>
+            <li>Einfache Integration in bestehende Systeme</li>
+        </ul>
+    </div>
+</section>
+
+<section id="workflow">
+    <h2>So funktioniert unser Prozess</h2>
+    <div class="workflow">
+        <div class="card">
+            <h3>1. Beratung</h3>
+            <p>Wir analysieren Ihre Anforderungen und erarbeiten eine individuelle Lösung.</p>
+        </div>
+        <div class="card">
+            <h3>2. Installation</h3>
+            <p>Die offline KI wird sicher und datenschutzkonform vor Ort eingerichtet.</p>
+        </div>
+        <div class="card">
+            <h3>3. Schulung</h3>
+            <p>Ihr Team erhält eine praxisnahe Schulung und kann die KI direkt einsetzen.</p>
+        </div>
+        <div class="card">
+            <h3>4. Support</h3>
+            <p>Wir stehen Ihnen jederzeit beratend zur Seite und sorgen für Updates & Wartung.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Kontaktieren Sie uns</h2>
+    <div class="card">
+        <p>Sie möchten mehr über unsere Offline-KI erfahren oder ein Angebot erhalten?</p>
+        <p>Email: info@offlineki.de</p>
+        <p>Telefon: +49 123 456789</p>
+    </div>
+    <div class="card">
+        <form>
+            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+            <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required>
+            <textarea id="message" name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Offline KI Solutions | Alle Rechte vorbehalten</p>
+</footer>
+
 </body>
 </html>
